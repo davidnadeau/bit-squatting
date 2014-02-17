@@ -1,0 +1,14 @@
+<html> 
+  <head> 
+    <script type="text/javascript">
+      XMLHttp = new XMLHttpRequest();
+      function getData(file) { 
+        XMLHttp.open("GET", file); 
+        XMLHttp.send(); 
+      }
+    </script>
+  </head>
+  <body>
+      <input type = "button" value = "get" onclick = "getData('icon.png')" />
+  </body> 
+</html>
