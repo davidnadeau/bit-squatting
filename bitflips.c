@@ -4,6 +4,7 @@
 #define BYTE 7 
 
 int getaddress(char address[]);
+int flipbit(int n, int k);
 
 main() {
     int word_length, flip_count;
