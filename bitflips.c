@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 #define MAXLENGTH 100
-#define BYTE 8
+#define BYTE 7 
 
 int getaddress(char address[]);
 
@@ -25,12 +25,13 @@ main() {
     int k;
     k = 0;
     for (i = 0; i < word_length; ++i) {
-        for (j = 1; j < BYTE - 1; ++j) {
+        for (j = 1; j < BYTE; ++j) {
             flipped_address[k][i] = flipbit(address[i], j);
             printf("%s\n",flipped_address[k]);
             ++k;
         }
     }   
+    printf("%s\n",flipped_address[k]);
 }
 
 /* get word from console, return word len*/
